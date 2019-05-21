@@ -22,7 +22,9 @@ public class Picture
      */
     public Picture()
     {
+        this.draw();
         // nothing to do... instance variables are automatically set to null
+        //this.draw();
     }
 
     /**
@@ -31,28 +33,83 @@ public class Picture
     public void draw()
     {
         wall = new Square();
-        wall.moveVertical(80);
+        wall.changeColor("white");
+        wall.moveVertical(180);
         wall.changeSize(100);
         wall.makeVisible();
 
         window = new Square();
-        window.changeColor("black");
+        window.changeColor("magenta");
         window.moveHorizontal(20);
-        window.moveVertical(100);
+        window.moveVertical(200);
         window.makeVisible();
 
         roof = new Triangle();
         roof.changeSize(50, 140);
         roof.moveHorizontal(60);
-        roof.moveVertical(70);
+        roof.moveVertical(170);
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(180);
+        sun.changeColor("red");
+        sun.moveHorizontal(350);
         sun.moveVertical(-10);
-        sun.changeSize(60);
+        sun.changeSize(100);
         sun.makeVisible();
+        
+        wall = new Square();
+        wall.changeColor("white");
+        wall.moveVertical(80);
+        wall.changeSize(100);
+        wall.makeVisible();
+
+        window = new Square();
+        window.changeColor("magenta");
+        window.moveHorizontal(20);
+        window.moveVertical(100);
+        window.makeVisible();
+        
+        wall = new Square();
+        wall.changeColor("white");
+        wall.moveVertical(180);
+        wall.moveHorizontal(100);
+        wall.changeSize(100);
+        wall.makeVisible();
+
+        window = new Square();
+        window.changeColor("magenta");
+        window.moveHorizontal(120);
+        window.moveVertical(200);
+        window.makeVisible();
+
+        roof = new Triangle();
+        roof.changeSize(50, 140);
+        roof.moveHorizontal(160);
+        roof.moveVertical(170);
+        roof.makeVisible();
+        
+        wall = new Square();
+        wall.changeColor("white");
+        wall.moveVertical(80);
+        wall.moveHorizontal(100);
+        wall.changeSize(100);
+        wall.makeVisible();
+
+        window = new Square();
+        window.changeColor("magenta");
+        window.moveHorizontal(120);
+        window.moveVertical(100);
+        window.makeVisible();
+        
+        roof = new Triangle();
+        roof.changeSize(100, 350);
+        roof.moveHorizontal(100);
+        roof.moveVertical(20);
+        roof.makeVisible();
+
+        
+        
+        
     }
 
     /**
